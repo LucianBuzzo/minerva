@@ -17,3 +17,7 @@ A webpage will now be available at http://localhost:1234.
 
 Yes you can!
 https://opensea.io/collection/30563363-minerva
+
+## License
+
+This project is licensed under the terms of the CC0 license, go nuts!
