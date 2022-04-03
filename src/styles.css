@@ -1,0 +1,67 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+#canvas {
+  position: relative;
+  height: 100%;
+  width: 80%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.panel {
+  height: 50%;
+  max-height: 500px;
+  width: 50%;
+  background: #bc51cf;
+  border-radius: 8%;
+  top: 25%;
+  left: 25%;
+  position: absolute;
+  transform: perspective(20px) rotateX(0deg);
+  animation-duration: 2.5s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  transition: background 1000ms ease-in-out;
+}
+
+.layer-1 {
+  animation-delay: -0.5s;
+}
+.layer-1 {
+  animation-delay: -1s;
+}
+.layer-3 {
+  animation-delay: -1.2s;
+}
+.layer-4 {
+  animation-delay: -1.6s;
+}
+.layer-5 {
+  animation-delay: -2.5s;
+}
+.layer-6 {
+  animation-delay: -3s;
+}
+
+@keyframes slidein {
+  from {
+    top: -55%;
+    opacity: 0;
+    transform: perspective(20px) rotateX(-5deg);
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  to {
+    top: 130%;
+    opacity: 0;
+    transform: perspective(20px) rotateX(5deg);
+  }
+}
